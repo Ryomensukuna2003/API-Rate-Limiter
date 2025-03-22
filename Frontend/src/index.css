@@ -119,9 +119,19 @@
   }
 }
 
-
 @font-face {
   font-family: "Cispeo";   /*Can be any text*/
   src: local("Cispeo-Regular"),
     url("./assets/fonts/GeistMono.ttf") format("truetype");
+}
+
+/*---break---*/
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
